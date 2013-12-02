@@ -1,0 +1,17 @@
+package czt.learn.DZGZ;
+
+public class SmartSorting123 {
+	
+	public static void byPrimeNumber(String input) {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// 6 '1', 6 '2', 6 '3'
+		String s1 = "123132213231321312";
+		
+	}
+
+}
