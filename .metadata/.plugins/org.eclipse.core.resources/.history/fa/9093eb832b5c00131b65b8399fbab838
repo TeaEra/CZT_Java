@@ -21,6 +21,10 @@ public class PivotSorting {
 		for (int i=0; i<size; ++i) {
 			inList.add(new Integer(Constants.scanner.nextInt()));
 		}
+		
+		for (int i=0; i<inList.size(); ++i) {
+			System.out.println(inList.get(i).intValue());
+		}
 	}
 
 }
