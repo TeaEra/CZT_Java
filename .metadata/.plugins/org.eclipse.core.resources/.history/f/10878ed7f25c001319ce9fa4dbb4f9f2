@@ -1,0 +1,50 @@
+package czt.learn.DZGZ;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import czt.learn.Util.StaticMethods;
+
+public class PivotSorting {
+	
+	public static void pivotSort(List<Integer> inList) {
+		int size = inList.size();
+		int pivot = inList.get(0).intValue();
+		int smallIdx = 1;
+		int bigIdx = 0;
+		
+		for (int i=1; i<size; ++i) {
+			if () {
+				
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Manually initialize a List for 15 integers
+		List<Integer> l = new ArrayList<Integer>() {{
+			new Integer(6);
+			new Integer(4);
+			new Integer(5);
+			new Integer(7);
+			new Integer(3);
+			new Integer(8);
+			new Integer(4);
+			new Integer(10);
+			new Integer(1);
+			new Integer(2);
+			new Integer(6);
+			new Integer(1);
+			new Integer(5);
+			new Integer(9);
+			new Integer(9);
+		}};
+		// The original sequence
+		StaticMethods.showList(l);
+		//
+		PivotSorting.pivotSort(l);
+	}
+
+}

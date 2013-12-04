@@ -1,0 +1,29 @@
+package czt.learn.DZGZ;
+
+import java.util.List;
+
+public class PivotSorting {
+	
+	public static void pivotSort() {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		6
+		4
+		5
+		3
+		3
+		8
+		4
+		10
+		1
+		2
+		6
+		1
+		5
+		9
+	}
+
+}

@@ -1,0 +1,11 @@
+package czt.learn.Util;
+
+public class StaticMethods {
+
+	public static showList(List inList) {
+		for () {
+			
+		}
+	}
+	
+}

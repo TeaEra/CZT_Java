@@ -1,0 +1,25 @@
+package czt.learn.DZGZ;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import czt.learn.Util.StaticMethods;
+
+public class PivotSorting {
+	
+	public static void pivotSort(List<Integer> inList) {
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Manually initialize an array for 10 integers
+		int[] arr = new int[10] {};
+		
+		// The original sequence
+		StaticMethods.showList(l);
+		//
+		PivotSorting.pivotSort(l);
+	}
+
+}
