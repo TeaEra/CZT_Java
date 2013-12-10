@@ -17,6 +17,7 @@ public class Trial {
 	
 	public static void dbiFroList() {
 		// This is called 'double brace initialization'
+		@SuppressWarnings("serial")
 		List<Integer> dbiList = new ArrayList<Integer>() {{
 			add(new Integer(1));
 			add(new Integer(2));

@@ -1,0 +1,22 @@
+package czt.learn.Util;
+
+// Definition for singly-linked list.
+public class ListNode {
+	public int val;
+    public ListNode next;
+	
+    public ListNode(int x) {
+		val = x;
+		next = null;
+	}
+    
+    public static showListNode(ListNode head) {
+    	ListNode temp = head;
+    	if (temp != null) {
+    		
+    	}
+    	else {
+    		System.out.println("{}");
+    	}
+    }
+}

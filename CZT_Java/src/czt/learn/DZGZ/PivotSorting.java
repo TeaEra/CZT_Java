@@ -1,9 +1,5 @@
 package czt.learn.DZGZ;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import czt.learn.Util.StaticMethods;
 
 public class PivotSorting {
 	
@@ -14,6 +10,7 @@ public class PivotSorting {
 	// TODO: randomized QuickSort
 	// which means to choose pivot randomly;
 	
+	// Part1
 	public static void pivotSort(int[] arr, int start, int end) {
 		if (start < end) {
 			int mid = pivotPartition(arr, start, end);
