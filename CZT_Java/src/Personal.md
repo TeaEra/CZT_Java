@@ -14,6 +14,7 @@
 # czt.learn.LeetCode.resources
 ------
 1. ListNode
+
 This class is for single linked list;
 
 # czt.learn.Util
