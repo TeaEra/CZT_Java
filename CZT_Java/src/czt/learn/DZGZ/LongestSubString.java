@@ -6,6 +6,7 @@ public class LongestSubString {
 
 	private final static String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
+	// ??????
 	/**
 	 * 
 	 * @param input
@@ -112,7 +113,8 @@ public class LongestSubString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//String test1 = "abcacfar"; LongestSubString.solution1(test1);
+		//String test1 = "abcacfar";
+		//LongestSubString.solution1(test1);
 
 		System.out
 				.println(LongestSubString

@@ -1,0 +1,14 @@
+package czt.learn.LeetCode;
+
+public class SortList {
+
+    public static ListNode sortList(ListNode head) {
+        return null;
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

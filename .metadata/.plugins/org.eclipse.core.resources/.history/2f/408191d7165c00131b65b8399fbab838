@@ -1,6 +1,0 @@
-package czt.learn.Util;
-
-public final class Constants {
-
-	public final static String SEP1 = "======";
-}

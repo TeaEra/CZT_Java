@@ -1,0 +1,15 @@
+package czt.learn.LeetCode;
+
+public class RotateList {
+	
+    public static ListNode rotateRight(ListNode head, int n) {
+        
+    	return null;
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

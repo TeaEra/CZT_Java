@@ -1,0 +1,39 @@
+package czt.learn.LeetCode;
+
+import czt.learn.LeetCode.resources.ListNode;
+
+public class RotateList {
+	
+    public static ListNode rotateRight(ListNode head, int n) {
+        
+    	ListNode fakeHead = head;    	
+    	ListNode preNode = null;
+    	ListNode currNode;
+    	ListNode resHead;
+    	
+    	while (fakeHead != null) {
+    		currNode = fakeHead;
+    		currNode.next = preNode;
+    		resHead = currNode;
+    		
+    		if (fakeHead.next != null) {
+    			fakeHead = fakeHead.next;
+    		}
+    		else {
+    			break;
+    		}
+    	}
+    	return ;
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ListNode head = ListNode.createListNode(new int[]{1,2,3,4,5}).next;
+		ListNode.showListNode(head);
+		
+		ListNode rotateHead = RotateList.rotateRight(head, 2);
+		ListNode.showListNode(rotateHead);
+	}
+
+}

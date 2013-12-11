@@ -23,6 +23,7 @@ public class ListNode {
     		}
     	}
     	System.out.print("}");
+    	System.out.println();
     }
     
     public static ListNode createListNode(int[] arr) {
