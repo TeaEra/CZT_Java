@@ -11,6 +11,8 @@ public class ListNode {
 	}
     
     public static void showListNode(ListNode head) {
+    	// Create the Node, whose next is the actual head Node;
+    	// I called this fake head and used -1 as the default value;
     	ListNode temp = new ListNode(-1);
     	temp.next = head;
     	
@@ -27,8 +29,11 @@ public class ListNode {
     }
     
     public static ListNode createListNode(int[] arr) {
+    	// The fake head;
     	ListNode head = new ListNode(-1);
     	head.next = null;
+    	
+    	// 
     	ListNode anoHead = head;
     	for (int i=0; i<arr.length; ++i) {
     		ListNode tempNode = new ListNode(arr[i]);
@@ -37,5 +42,16 @@ public class ListNode {
     		anoHead = anoHead.next;
     	}
     	return head;
+    }
+    
+    public static int getSize(ListNode head) {
+    	// Without using fake head;
+    	ListNode anoHead = head;
+    	int size = 0;
+    	while (anoHead != null) {
+    		size++;
+    		anoHead = anoHead.next;
+    	}
+    	return size;
     }
 }
