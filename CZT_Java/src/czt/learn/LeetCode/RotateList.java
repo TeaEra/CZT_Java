@@ -75,42 +75,57 @@ public class RotateList {
     	return null;
     }
     
-    // ???
     public static ListNode swapPairs(ListNode head) {
-    	int count = 0;
-    	ListNode copyHead = head;
-    	
-    	/*ListNode resFakeHead = new ListNode(-1);
-    	resFakeHead.next = null;
-    	while (copyHead != null) {
-    		count++;
-    		if (copyHead.next == null) {
-    			
-    		}
-    	}*/
     	
     	if (head == null) {
     		return head;
     	}
     	
-        return null;
+    	ListNode copyHead = head;
+    	// The fake head for result;
+    	ListNode resHead = new ListNode(-1);
+    	resHead.next = null;
+    	ListNode copyResHead = resHead;
+    	ListNode first = null;
+    	ListNode second = null;
+    	
+    	while (copyHead != null) {
+    		first = copyHead;
+    		second = copyHead.next;
+    		
+    		if (second == null) {
+    			copyResHead.next = first;
+    			break;
+    		}
+    		else {
+    			ListNode temp = second.next;
+    			second.next = first;
+    			first.next = temp;
+    			copyHead = temp;
+    			copyResHead.next = second;
+    			copyResHead = copyResHead.next.next;
+    		}
+    	}
+    	
+        return resHead.next;
     }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Reverse the whole list
+		// Reverse the whole list;
 		/*ListNode head = ListNode.createListNode(new int[]{1}).next;
 		ListNode.showListNode(head);
 		ListNode rotateHead = RotateList.reverse(head);
 		ListNode.showListNode(rotateHead);*/
 		
-		// Right shift
+		// Right shift;
 		/*ListNode head = ListNode.createListNode(new int[]{1,2}).next;
 		ListNode.showListNode(head);
 		ListNode rsHead = RotateList.rightShift(head, 2);
 		ListNode.showListNode(rsHead);*/
 		
+		// Swap pairs;
 		ListNode head = ListNode.createListNode(new int[]{1,2,3,4,5}).next;
 		ListNode.showListNode(head);
 		ListNode swapHead = RotateList.swapPairs(head);
