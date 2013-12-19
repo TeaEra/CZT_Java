@@ -123,7 +123,6 @@ public class RotateList {
     		copyHead = copyHead.next;
     	}
     	
-    	boolean isEven = true;
     	int half;
     	//
 		ListNode leftHead = head;
@@ -131,11 +130,9 @@ public class RotateList {
     	
     	if (size % 2 == 0) {
     		half = size/2;
-    		isEven = true;
     	}
     	else {
     		half = (size+1)/2;
-    		isEven = false;
     	}
 		
 		ListNode preNode = null;
