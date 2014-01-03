@@ -13,6 +13,12 @@ public class TreeNode {
 		val = x;
 	}
 	
+	// Create Demo Tree:
+	// 1
+	//  \
+	//   2
+	//  /
+	// 3
 	public static TreeNode createDemoTreeNode() {
 		TreeNode root = new TreeNode(1);
 		root.left = null;
@@ -23,6 +29,12 @@ public class TreeNode {
 		return root;
 	}
 	
+	// Create Demo Tree:
+	//     3
+	//    / \
+	//   9   20
+	//      /  \
+	//     15   7
 	public static TreeNode createDemo2() {
 		TreeNode root = new TreeNode(3);
 		root.left = new TreeNode(9);
@@ -39,8 +51,20 @@ public class TreeNode {
 		
 		return root;
 	}
+	
+	// Create Demo Tree:
+	//    1
+	//   / \
+	//  2   3
+	public static TreeNode createDemo3() {
+		TreeNode root = new TreeNode(1);
+		root.left = new TreeNode(2);
+		root.right = new TreeNode(3);
+		
+		return root;
+	}
 
-	// Pre Order Traversal
+	// Pre-order Traversal
     public static ArrayList<Integer> preorderTraversal(TreeNode root) {
     	if (root != null) {
     		int rootVal = root.val;
@@ -62,7 +86,7 @@ public class TreeNode {
     	return new ArrayList<Integer>();
     }
     
-    // Post Order Traversal
+    // Post-order Traversal
     public static ArrayList<Integer> postorderTraversal(TreeNode root) {
     	if (root != null) {
     		int rootVal = root.val;
@@ -165,6 +189,85 @@ public class TreeNode {
     	}
     	return outList;
     }
+    
+    // 题目：[LeetCode] Maximum Depth of Binary Tree
+    // 解释：
+    // 获取二叉树的高度；
+    public static int maxDepth(TreeNode root) {
+        
+    	if (root == null) return 0;
+    	
+    	int depth = 0;
+    	
+    	List<TreeNode> currList = new ArrayList<TreeNode>();
+    	currList.add(root);
+    	
+    	while (currList.size() > 0) {
+    		depth++;
+    		List<TreeNode> tempList = new ArrayList<TreeNode>();
+    		for (int i=0; i<currList.size(); ++i) {
+    			if (currList.get(i).left != null) {
+    				tempList.add(currList.get(i).left);
+    			}
+    			if (currList.get(i).right != null) {
+    				tempList.add(currList.get(i).right);
+    			}
+    		}
+    		currList = tempList;
+    	}
+    	
+    	return depth;
+    }
+    
+    // 题目：[LeetCode] Sum Root to Leaf Numbers 
+    //
+    // 该题只是将从根到页的每一条路径上，节点值构成的数相加即可，
+    // 因为节点值只可以为0-9；其实就是要在每个level上计算当前level
+    // 所有节点的和，要注意的问题就是进位（carry）；
+    public static int sumNumbers(TreeNode root) {
+        
+    	if (root == null) return 0;
+    	
+    	List<Integer> bitList = new ArrayList<Integer>();
+    	
+    	List<TreeNode> currList = new ArrayList<TreeNode>();
+    	currList.add(root);
+    	
+    	while (currList.size() > 0) {
+    		int tempSum = 0;
+    		List<TreeNode> tempList = new ArrayList<TreeNode>();
+    		
+    		for (int i=0; i<currList.size(); ++i) {
+    			
+    			int multiple = 1;
+    			
+    			if (currList.get(i).left != null) {
+    				tempList.add(currList.get(i).left);
+    				multiple = 1;
+    			}
+    			if (currList.get(i).right != null) {
+    				tempList.add(currList.get(i).right);
+    				multiple++;
+    			}
+    			
+    			tempSum += currList.get(i).val * multiple;
+    		}
+    		
+    		currList = tempList;
+    		bitList.add(Integer.valueOf(tempSum));
+    	}
+
+    	StringBuffer sb = new StringBuffer();
+    	int carry = 0;
+    	for (int i=bitList.size()-1; i>=0; --i) {
+    		int rem = (bitList.get(i).intValue() + carry) % 10;
+    		carry = (bitList.get(i).intValue() + carry) / 10;
+    		sb.append(String.valueOf(rem));
+    	}
+    	sb.append(String.valueOf(carry));
+    	
+    	return Integer.valueOf(sb.reverse().toString()).intValue();
+    }
 	
 	public static void main(String[] args) {
 		/*TreeNode root = TreeNode.createDemoTreeNode();
@@ -174,7 +277,7 @@ public class TreeNode {
 			System.out.println(each);
 		}*/
 		
-		TreeNode root = TreeNode.createDemo2();
+		/*TreeNode root = TreeNode.createDemo2();
 		//ArrayList<ArrayList<Integer>> outList = TreeNode.levelOrder(root);
 		ArrayList<ArrayList<Integer>> outList = TreeNode.zigzagLevelOrder(root);
 		System.out.println("[");
@@ -189,6 +292,12 @@ public class TreeNode {
 			}
 			System.out.println("]");
 		}
-		System.out.println("]");
+		System.out.println("]");*/
+		
+		/*TreeNode root = TreeNode.createDemoTreeNode();
+		System.out.println(TreeNode.maxDepth(root));*/
+		
+		TreeNode root = TreeNode.createDemo3();
+		System.out.println(TreeNode.sumNumbers(root));
 	}
 }
