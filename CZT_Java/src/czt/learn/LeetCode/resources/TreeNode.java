@@ -1,5 +1,7 @@
 package czt.learn.LeetCode.resources;
 
+import sun.reflect.generics.tree.Tree;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -268,6 +270,21 @@ public class TreeNode {
     	
     	return Integer.valueOf(sb.reverse().toString()).intValue();
     }
+
+    // ÌâÄ¿£º [LeetCode] Same Tree
+    //
+    //
+    public static boolean isSameTree(TreeNode p, TreeNode q) {
+        if (p == null && q == null) {
+            return true;
+        }
+        if (p != null && q != null) {
+            if (p.val == q.val) {
+                return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+            }
+        }
+        return false;
+    }
 	
 	public static void main(String[] args) {
 		/*TreeNode root = TreeNode.createDemoTreeNode();
@@ -297,7 +314,11 @@ public class TreeNode {
 		/*TreeNode root = TreeNode.createDemoTreeNode();
 		System.out.println(TreeNode.maxDepth(root));*/
 		
-		TreeNode root = TreeNode.createDemo3();
-		System.out.println(TreeNode.sumNumbers(root));
+		/*TreeNode root = TreeNode.createDemo3();
+		System.out.println(TreeNode.sumNumbers(root));*/
+
+		TreeNode root1 = TreeNode.createDemo3();
+        TreeNode root2 = TreeNode.createDemo3();
+        System.out.println(TreeNode.isSameTree(root1, root2));
 	}
 }
