@@ -1,4 +1,4 @@
-package czt.learn.Util;
+package czt.util;
 
 import java.util.ArrayList;
 import java.util.List;

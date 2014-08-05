@@ -1,6 +1,6 @@
 package czt.learn.DZGZ;
 
-import czt.learn.Util.StaticMethods;
+import czt.util.StaticMethods;
 
 public class InsertionSort {
 	

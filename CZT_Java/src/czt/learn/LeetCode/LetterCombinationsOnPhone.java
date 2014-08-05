@@ -1,9 +1,8 @@
 package czt.learn.LeetCode;
 
-import czt.learn.Util.StaticMethods;
+import czt.util.StaticMethods;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by TeaEra on 14-2-16.

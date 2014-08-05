@@ -1,6 +1,6 @@
 package czt.learn.LeetCode;
 
-import czt.learn.Util.StaticMethods;
+import czt.util.StaticMethods;
 
 public class PlusOne {
 

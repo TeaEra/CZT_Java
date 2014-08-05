@@ -1,9 +1,9 @@
-package czt.learn.Util;
+package czt.util;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Trial {
+public class Trials {
 	
 	public static void getInputFromIn() {
 		//Test for getting input from user; eg. integer numbers with 'size';
@@ -39,9 +39,9 @@ public class Trial {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//Trial.getInputFromIn();
-		//Trial.dbiFroList();
-		Trial.genRandomNumber(15);
+		//Trials.getInputFromIn();
+		//Trials.dbiFroList();
+		Trials.genRandomNumber(15);
 	}
 
 }
