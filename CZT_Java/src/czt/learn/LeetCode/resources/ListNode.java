@@ -1,6 +1,4 @@
-package czt.learn.LeetCode.resources;
-
-import java.util.List;
+package czt.learn.leetcode.resources;
 
 // Definition for singly-linked list.
 public class ListNode {
@@ -62,7 +60,7 @@ public class ListNode {
     	return size;
     }
 
-    // [LeetCode] Merge two sorted list;
+    // [leetcode] Merge two sorted list;
     //
     // Step1: assume all in ascending;
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
@@ -92,7 +90,7 @@ public class ListNode {
         return fakeHead.next;
     }
 
-    // [LeetCode] Sort list;
+    // [leetcode] Sort list;
     //
     // Ver 1: nlogn; insertion sort;
     public static ListNode sortList(ListNode head) {

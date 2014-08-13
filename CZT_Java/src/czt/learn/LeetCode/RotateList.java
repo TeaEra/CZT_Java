@@ -1,6 +1,6 @@
-package czt.learn.LeetCode;
+package czt.learn.leetcode;
 
-import czt.learn.LeetCode.resources.ListNode;
+import czt.learn.leetcode.resources.ListNode;
 
 // Actually I add many kinds of permutation functions here;
 public class RotateList {

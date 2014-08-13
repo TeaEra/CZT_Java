@@ -1,6 +1,6 @@
-package czt.learn.LeetCode;
+package czt.learn.leetcode;
 
-import czt.learn.LeetCode.resources.ListNode;
+import czt.learn.leetcode.resources.ListNode;
 
 public class LinkedListCycle {
 	

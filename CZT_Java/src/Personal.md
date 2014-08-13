@@ -1,4 +1,4 @@
-### czt.learn.DZGZ
+### czt.learn.dzgz
 ---
 
 > 待字闺中
@@ -8,14 +8,14 @@
 - PivotSorting
 - SmartSorting123
 
-### czt.learn.LeetCode
+### czt.learn.leetcode
 ---
 
 - AddTwoNumbers
 - StringNumber
 - Pow
 
-### czt.learn.LeetCode.resources
+### czt.learn.leetcode.resources
 ---
 
 - ListNode
@@ -25,5 +25,5 @@ This class is for single linked list;
 ### czt.learn.Util
 ---
 
-### czt.learn.CrackCode
+### czt.learn.crackcode
 ---

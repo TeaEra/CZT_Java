@@ -1,4 +1,4 @@
-package czt.learn.LeetCode;
+package czt.learn.leetcode;
 
 import czt.util.StaticMethods;
 

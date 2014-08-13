@@ -1,6 +1,4 @@
-package czt.learn.LeetCode.resources;
-
-import sun.reflect.generics.tree.Tree;
+package czt.learn.leetcode.resources;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -192,7 +190,7 @@ public class TreeNode {
     	return outList;
     }
     
-    // 题目：[LeetCode] Maximum Depth of Binary Tree
+    // 题目：[leetcode] Maximum Depth of Binary Tree
     // 解释：
     // 获取二叉树的高度；
     public static int maxDepth(TreeNode root) {
@@ -221,7 +219,7 @@ public class TreeNode {
     	return depth;
     }
     
-    // 题目：[LeetCode] Sum Root to Leaf Numbers 
+    // 题目：[leetcode] Sum Root to Leaf Numbers
     //
     // 该题只是将从根到页的每一条路径上，节点值构成的数相加即可，
     // 因为节点值只可以为0-9；其实就是要在每个level上计算当前level
@@ -271,7 +269,7 @@ public class TreeNode {
     	return Integer.valueOf(sb.reverse().toString()).intValue();
     }
 
-    // 题目： [LeetCode] Same Tree
+    // 题目： [leetcode] Same Tree
     //
     //
     public static boolean isSameTree(TreeNode p, TreeNode q) {

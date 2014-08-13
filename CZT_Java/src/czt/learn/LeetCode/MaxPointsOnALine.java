@@ -1,9 +1,9 @@
-package czt.learn.LeetCode;
+package czt.learn.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import czt.learn.LeetCode.resources.Point;
+import czt.learn.leetcode.resources.Point;
 
 public class MaxPointsOnALine {
 

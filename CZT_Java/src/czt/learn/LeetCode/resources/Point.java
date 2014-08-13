@@ -1,4 +1,4 @@
-package czt.learn.LeetCode.resources;
+package czt.learn.leetcode.resources;
 
 // Definition for a point.
 public class Point {

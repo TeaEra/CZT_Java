@@ -1,10 +1,10 @@
-package czt.learn.LeetCode;
+package czt.learn.leetcode;
 
 public class SingleNumber {
 
-	// ½âÊÍ£º
-	// Ê¹ÓÃÒì»òxor£¬ÍêÃÀ½«Å¼Êý´Î£¨ÕâÀïÊÇ2´Î£©³öÏÖµÄÊý×Ö¡°µÖÏû¡±£¬
-	// ×îºóÊ£ÓàµÄ¾ÍÊÇ½ö³öÏÖ1´ÎµÄÊý×Ö£»
+	// ï¿½ï¿½ï¿½Í£ï¿½
+	// Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½xorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½Î£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½Î£ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½
+	// ï¿½ï¿½ï¿½Ê£ï¿½ï¿½Ä¾ï¿½ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½Îµï¿½ï¿½ï¿½ï¿½Ö£ï¿½
     public static int singleNumber(int[] A) {
         
     	int singleNum = 0;
@@ -16,9 +16,9 @@ public class SingleNumber {
     	return singleNum;
     }
 
-    // ½âÊÍ£º
-    // Ê¹ÓÃÒ»¸ö32Î»µÄÊý×é£¬½²Ã¿¸öÊý×Ö¶ÔÓ¦¶þ½øÖÆÎ»ÉÏµÄÖµÏà¼Ó£¬È»ºó
-    // Ê¹ÓÃ mod 3£¬»ñµÃ¸ÃÎ»ÉÏ¡°²ÐÁô¡±Êý×Ö£¬ÔÙ»¹Ô­Îª½ö³öÏÖ1´ÎµÄÊý×Ö£»
+    // ï¿½ï¿½ï¿½Í£ï¿½
+    // Ê¹ï¿½ï¿½Ò»ï¿½ï¿½32Î»ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ïµï¿½Öµï¿½ï¿½Ó£ï¿½È»ï¿½ï¿½
+    // Ê¹ï¿½ï¿½ mod 3ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Î»ï¿½Ï¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½Ù»ï¿½Ô­Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½Îµï¿½ï¿½ï¿½ï¿½Ö£ï¿½
     public static int singleNumber_triple(int[] A) {
         
     	int[] bitArr = new int[32];
