@@ -1,4 +1,4 @@
-package czt.learn.DZGZ;
+package czt.learn.dzgz;
 
 
 public class PivotSorting {

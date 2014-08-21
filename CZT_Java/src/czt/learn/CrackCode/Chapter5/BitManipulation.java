@@ -1,4 +1,4 @@
-package czt.learn.CrackCode.Chapter5;
+package czt.learn.crackcode.Chapter5;
 
 import java.util.Arrays;
 import java.util.List;

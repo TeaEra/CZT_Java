@@ -1,7 +1,6 @@
-package czt.learn.CrackCode.Util;
+package czt.learn.crackcode.Util;
 
 import java.io.*;
-import java.util.logging.Logger;
 
 /**
  * Created by: TeaEra;

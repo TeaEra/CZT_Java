@@ -1,4 +1,4 @@
-package czt.learn.CrackCode.Chapter8;
+package czt.learn.crackcode.Chapter8;
 
 import java.util.ArrayList;
 import java.util.List;

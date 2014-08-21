@@ -1,4 +1,4 @@
-package czt.learn.CrackCode.Chapter5;
+package czt.learn.crackcode.Chapter5;
 
 /**
  * Created by TeaEra on 14-4-2.
