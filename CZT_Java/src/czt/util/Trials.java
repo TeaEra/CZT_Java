@@ -36,12 +36,26 @@ public class Trials {
 		}
 	}
 
+    public static void test_20141203_1() {
+        String s = "习奥会瀛台谈话习奥会瀛台谈话";
+        //System.out.println(s.length());
+        String out_s = s;
+        if (s.length() > 9) {
+            out_s = s.substring(0,8) + "...";
+        }
+        System.out.println(out_s);
+    }
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		//Trials.getInputFromIn();
 		//Trials.dbiFroList();
-		Trials.genRandomNumber(15);
+		//Trials.genRandomNumber(15);
+
+        //
+        // 2014-12-03
+        Trials.test_20141203_1();
 	}
 
 }
